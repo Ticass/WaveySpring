@@ -1,0 +1,14 @@
+services:
+  db:
+    container_name: wavey_spring
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: wavey
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Lechoixdupc42
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - wavey_network
