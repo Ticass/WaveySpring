@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9bfeb4d-14a4-4daf-8c61-5922e4398cd3" name="Changes" comment=":sparkles: added post route to register, no password encryption yet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UserLoginResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WaveySpringBootMavenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WaveySpringBootMavenApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WaveySpringBootMavenApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WaveySpringBootMavenApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +109,7 @@
       <updated>1748891624295</updated>
       <workItem from="1748891625350" duration="7426000" />
       <workItem from="1749412953258" duration="6852000" />
-      <workItem from="1749485297937" duration="7641000" />
+      <workItem from="1749485297937" duration="9910000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: started the project">
       <option name="closed" value="true" />
