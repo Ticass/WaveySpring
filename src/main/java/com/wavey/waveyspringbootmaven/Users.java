@@ -1,18 +1,22 @@
 package com.wavey.waveyspringbootmaven;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 import java.util.Objects;
+
 @Entity
 public class Users {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-    private String profilePicture;
+    private String profilePicture; // Changed to camelCase to match UsersCreateRequest
 
     public Integer getId() {
         return id;
@@ -26,7 +30,8 @@ public class Users {
         return profilePicture;
     }
 
-    public void setProfile_picture(String profilePicture) {
+    // Changed method name to setProfilePicture for consistency
+    public void setProfilePicture(String profilePicture) {
         this.profilePicture = profilePicture;
     }
 
@@ -50,8 +55,8 @@ public class Users {
         return lastName;
     }
 
-    public void setLastName(String last_name) {
-        this.lastName = last_name;
+    public void setLastName(String lastName) { // Changed parameter name to match field
+        this.lastName = lastName;
     }
 
     public String getFirstName() {
@@ -63,7 +68,7 @@ public class Users {
     }
 
     public Users() {
-
+        // Default constructor
     }
 
     @Override
