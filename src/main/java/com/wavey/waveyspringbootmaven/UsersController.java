@@ -26,4 +26,9 @@ public class UsersController {
     public Users registerUser(@RequestBody UsersCreateRequest request) {
         return usersService.CreateUser(request);
     }
+
+    @PostMapping("/login")
+    public String loginUser(@RequestBody UserLoginResponse response) {
+        return usersService.LoginUser(response);
+    }
 }
