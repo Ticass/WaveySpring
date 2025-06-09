@@ -1,6 +1,8 @@
 package com.wavey.waveyspringbootmaven;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 import java.util.Objects;
@@ -9,25 +11,28 @@ import java.util.Objects;
 public class Waves {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Use IDENTITY for auto-incrementing primary keys
     private Integer id;
-    private String first_name;
-    private String last_name;
+    private String firstName;
+    private String lastName;
     private String content;
-    private Integer user_id;
-    private String content_photo;
+    private Integer userId;
+    private String contentPhoto;
     private Boolean deleted;
     private Integer likes;
 
     public Waves() {
     }
 
-    public Waves(Integer id, String first_name, String last_name, String content, Integer user_id, String content_photo, Boolean deleted, Integer likes) {
-        this.id = id;
-        this.first_name = first_name;
-        this.last_name = last_name;
+    // This constructor should ideally NOT include 'id' if you're relying on GENERATED values,
+    // but it won't cause issues for new saves if IDENTITY is used and id is null.
+    public Waves(Integer id, String firstName, String lastName, String content, Integer userId, String contentPhoto, Boolean deleted, Integer likes) {
+        this.id = id; // Hibernate will ignore this 'id' on a new save if IDENTITY is used.
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.content = content;
-        this.user_id = user_id;
-        this.content_photo = content_photo;
+        this.userId = userId;
+        this.contentPhoto = contentPhoto;
         this.deleted = deleted;
         this.likes = likes;
     }
@@ -40,20 +45,20 @@ public class Waves {
         this.id = id;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getContent() {
@@ -64,20 +69,20 @@ public class Waves {
         this.content = content;
     }
 
-    public Integer getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(Integer user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getContent_photo() {
-        return content_photo;
+    public String getContentPhoto() {
+        return contentPhoto;
     }
 
-    public void setContent_photo(String content_photo) {
-        this.content_photo = content_photo;
+    public void setContentPhoto(String contentPhoto) {
+        this.contentPhoto = contentPhoto;
     }
 
     public Boolean getDeleted() {
@@ -100,11 +105,11 @@ public class Waves {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Waves waves = (Waves) o;
-        return Objects.equals(id, waves.id) && Objects.equals(first_name, waves.first_name) && Objects.equals(last_name, waves.last_name) && Objects.equals(content, waves.content) && Objects.equals(user_id, waves.user_id) && Objects.equals(content_photo, waves.content_photo) && Objects.equals(deleted, waves.deleted) && Objects.equals(likes, waves.likes);
+        return Objects.equals(id, waves.id) && Objects.equals(firstName, waves.firstName) && Objects.equals(lastName, waves.lastName) && Objects.equals(content, waves.content) && Objects.equals(userId, waves.userId) && Objects.equals(contentPhoto, waves.contentPhoto) && Objects.equals(deleted, waves.deleted) && Objects.equals(likes, waves.likes);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, first_name, last_name, content, user_id, content_photo, deleted, likes);
+        return Objects.hash(id, firstName, lastName, content, userId, contentPhoto, deleted, likes);
     }
 }

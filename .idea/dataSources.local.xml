@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-251.25410.129">
     <data-source name="postgres@localhost" uuid="e133e6fa-e24f-4e42-9112-5b5a1fefe4ab">
-      <database-info product="PostgreSQL" version="17.5 (Debian 17.5-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.3" dbms="POSTGRES" exact-version="17.5" exact-driver-version="42.7">
+      <database-info product="PostgreSQL" version="16.9 (Ubuntu 16.9-0ubuntu0.24.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.3" dbms="POSTGRES" exact-version="16.9" exact-driver-version="42.7">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -17,6 +17,20 @@
             <node kind="database" qname="wavey">
               <node kind="schema" negative="1" />
             </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="wavey@localhost" uuid="6e0bbc45-1081-46db-a8d4-ccab2150ad1e">
+      <database-info product="PostgreSQL" version="16.9 (Ubuntu 16.9-0ubuntu0.24.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.3" dbms="POSTGRES" exact-version="16.9" exact-driver-version="42.7">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
           </node>
         </introspection-scope>
       </schema-mapping>
