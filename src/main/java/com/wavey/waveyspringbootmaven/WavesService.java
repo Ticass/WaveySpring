@@ -25,16 +25,6 @@ public class WavesService {
 
     // The @Valid annotation will trigger validation based on @NotNull in WaveCreateRequest
     public Waves createWave(@Valid WaveCreateRequest request) { // Removed @RequestBody here
-        // For debugging, print the fields of the request object
-        System.out.println("--- Received WaveCreateRequest for creation ---");
-        System.out.println("  firstName: " + request.getFirstName());
-        System.out.println("  lastName: " + request.getLastName());
-        System.out.println("  content: " + request.getContent());
-        System.out.println("  userId: " + request.getUserId());
-        System.out.println("  contentPhoto: " + request.getContentPhoto());
-        System.out.println("  deleted: " + request.getDeleted());
-        System.out.println("  likes: " + request.getLikes());
-        System.out.println("----------------------------------------------");
 
         Waves wave = new Waves();
         // Map fields from the request DTO to the entity

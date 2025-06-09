@@ -34,9 +34,4 @@ public class WavesController {
         // to the WaveCreateRequest object.
         return wavesService.createWave(request);
     }
-
-    @PostMapping("/insert")
-    public void addWave(@RequestBody Waves wave){ // Added @RequestBody to correctly parse JSON
-        wavesService.insertWave(wave);
-    }
 }

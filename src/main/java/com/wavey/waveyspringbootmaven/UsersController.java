@@ -1,9 +1,7 @@
 package com.wavey.waveyspringbootmaven;
 import java.util.List;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/users")
@@ -22,5 +20,10 @@ public class UsersController {
     @GetMapping("{id}")
     public Users getUserById(@PathVariable Integer id) {
         return usersService.getUserById(id);
+    }
+
+    @PostMapping("/register")
+    public Users registerUser(@RequestBody UsersCreateRequest request) {
+        return usersService.CreateUser(request);
     }
 }

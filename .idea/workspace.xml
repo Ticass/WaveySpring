@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9bfeb4d-14a4-4daf-8c61-5922e4398cd3" name="Changes" comment=":tada: started the project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WaveCreateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e133e6fa-e24f-4e42-9112-5b5a1fefe4ab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e133e6fa-e24f-4e42-9112-5b5a1fefe4ab.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e133e6fa-e24f-4e42-9112-5b5a1fefe4ab/storage_v2/_src_/database/wavey.oMy6Bg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e133e6fa-e24f-4e42-9112-5b5a1fefe4ab/storage_v2/_src_/database/wavey.oMy6Bg/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="b9bfeb4d-14a4-4daf-8c61-5922e4398cd3" name="Changes" comment=":sparkles: added Wave creation via post, added users model and basic controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersCreateRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/Waves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/Waves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WavesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WavesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WavesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WavesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WavesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/WavesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/Waves.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/Waves.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WavesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WavesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WavesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WavesRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WavesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wavey/waveyspringbootmaven/WavesService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +113,7 @@
       <updated>1748891624295</updated>
       <workItem from="1748891625350" duration="7426000" />
       <workItem from="1749412953258" duration="6852000" />
-      <workItem from="1749485297937" duration="2361000" />
+      <workItem from="1749485297937" duration="4516000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: started the project">
       <option name="closed" value="true" />
@@ -135,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749413433565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":sparkles: added Wave creation via post, added users model and basic controller">
+      <option name="closed" value="true" />
+      <created>1749487969665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749487969665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":tada: started the project" />
-    <option name="LAST_COMMIT_MESSAGE" value=":tada: started the project" />
+    <MESSAGE value=":sparkles: added Wave creation via post, added users model and basic controller" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: added Wave creation via post, added users model and basic controller" />
   </component>
 </project>
