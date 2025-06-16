@@ -34,15 +34,4 @@ public class UsersService {
         return user;
     }
 
-    public String LoginUser(@Valid UserLoginResponse request) {
-        Users user = usersRepository.findFirstByEmail(request.getEmail());
-        if (user == null) {return "Invalid email";};
-        String encodedPassword = user.getPassword();
-        String rawPassword = request.getPassword();
-        if (!passwordEncoder.matches(rawPassword, encodedPassword)) {
-            return "Invalid password";
-        }
-        return "success";
-    }
-
 }
