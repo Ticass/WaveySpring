@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9bfeb4d-14a4-4daf-8c61-5922e4398cd3" name="Changes" comment=":sparkles: added post route to register, no password encryption yet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/Likes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesCreateRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/LikesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wavey/waveyspringbootmaven/UsersService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,34 +48,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.WaveySpringBootMavenApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ Projects/waveySpringBootMaven&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.All in generated-requests.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.WaveySpringBootMavenApplication.executor": "Run",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/IntelliJ Projects/waveySpringBootMaven",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "io.github.pandier.intellijdiscordrp.settings.DiscordSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Spring Boot.WaveySpringBootMavenApplication">
+}]]></component>
+  <component name="RunManager" selected="Unknown.WaveySpringBootMavenApplication177391926">
     <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
       <method v="2" />
     </configuration>
@@ -88,20 +91,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="HTTP Request.All in generated-requests" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -113,7 +102,9 @@
       <workItem from="1748891625350" duration="7426000" />
       <workItem from="1749412953258" duration="6852000" />
       <workItem from="1749485297937" duration="12633000" />
-      <workItem from="1750093169576" duration="1253000" />
+      <workItem from="1750093169576" duration="3798000" />
+      <workItem from="1756136708132" duration="257000" />
+      <workItem from="1756137086619" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: started the project">
       <option name="closed" value="true" />
